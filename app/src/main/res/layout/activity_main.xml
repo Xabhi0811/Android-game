@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Winner Message Box (like your .msg div) -->
+    <LinearLayout
+        android:id="@+id/msgLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#DDDDDD"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/msgg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Winner"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Game" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Game Board 3x3 -->
+    <GridLayout
+        android:id="@+id/gameGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3">
+
+        <Button
+            android:id="@+id/btn0"
+           />
+
+        <Button
+            android:id="@+id/btn1"
+             />
+
+        <Button
+            android:id="@+id/btn2"
+            />
+
+        <Button
+            android:id="@+id/btn3"
+           />
+
+        <Button
+            android:id="@+id/btn4"
+            />
+
+        <Button
+            android:id="@+id/btn5"
+            />
+
+        <Button
+            android:id="@+id/btn6"
+           />
+
+        <Button
+            android:id="@+id/btn7"
+            />
+
+        <Button
+            android:id="@+id/btn8"
+           />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:textSize="32sp"
+        android:layout_margin="4dp" />
+
+
+</LinearLayout>
